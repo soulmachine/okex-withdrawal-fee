@@ -8,6 +8,6 @@ import { WithdrawalFee } from './pojo/withdrawal_fee';
  * @returns WithdrawalFee
  */
 // eslint-disable-next-line import/prefer-default-export
-export function getWithdrawalFee(symbol: string): WithdrawalFee {
+export function getWithdrawalFee(symbol: string): WithdrawalFee | WithdrawalFee[] {
   return WITHDRAWAL_FEE_MAP[symbol];
 }

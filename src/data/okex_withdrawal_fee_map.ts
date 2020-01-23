@@ -1,6 +1,6 @@
 import { WithdrawalFee } from '../pojo/withdrawal_fee';
 
-const mapping: { [key: string]: WithdrawalFee } = {
+const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
   '1ST': {
     min_withdraw_amount: 1,
     withdrawal_fee: 6,
@@ -781,18 +781,23 @@ const mapping: { [key: string]: WithdrawalFee } = {
     min_withdraw_amount: 1,
     withdrawal_fee: 0.5,
   },
-  'USDT-ERC20': {
-    min_withdraw_amount: 2,
-    withdrawal_fee: 1,
-  },
-  'USDT-OMNI': {
-    min_withdraw_amount: 10,
-    withdrawal_fee: 2,
-  },
-  'USDT-TRC20': {
-    min_withdraw_amount: 2,
-    withdrawal_fee: 0,
-  },
+  USDT: [
+    {
+      min_withdraw_amount: 2,
+      subtype: 'ERC20',
+      withdrawal_fee: 1,
+    },
+    {
+      min_withdraw_amount: 10,
+      subtype: 'OMNI',
+      withdrawal_fee: 2,
+    },
+    {
+      min_withdraw_amount: 2,
+      subtype: 'TRC20',
+      withdrawal_fee: 0,
+    },
+  ],
   UTK: {
     min_withdraw_amount: 1,
     withdrawal_fee: 3,

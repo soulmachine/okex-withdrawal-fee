@@ -1,6 +1,6 @@
 {
   "name": "okex-withdrawal-fee",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get OKEx withdrawal fees of all currencies.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
