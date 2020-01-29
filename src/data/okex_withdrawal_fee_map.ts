@@ -83,7 +83,7 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
   },
   BCH: {
     min_withdraw_amount: 0.01,
-    withdrawal_fee: 0.001,
+    withdrawal_fee: 0.0001,
   },
   BEC: {
     min_withdraw_amount: 1,
@@ -110,7 +110,7 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     withdrawal_fee: 0.00005,
   },
   BTC: {
-    min_withdraw_amount: 0.005,
+    min_withdraw_amount: 0.01,
     withdrawal_fee: 0.0005,
   },
   BTG: {
@@ -275,7 +275,7 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
   },
   ETH: {
     min_withdraw_amount: 0.01,
-    withdrawal_fee: 0.01,
+    withdrawal_fee: 0.003,
   },
   EVX: {
     min_withdraw_amount: 0.01,
@@ -697,10 +697,6 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     min_withdraw_amount: 10,
     withdrawal_fee: 150,
   },
-  SSC: {
-    min_withdraw_amount: 1,
-    withdrawal_fee: 8,
-  },
   STC: {
     min_withdraw_amount: 1,
     withdrawal_fee: 20,
@@ -785,7 +781,7 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     {
       min_withdraw_amount: 2,
       subtype: 'ERC20',
-      withdrawal_fee: 1,
+      withdrawal_fee: 0.88,
     },
     {
       min_withdraw_amount: 10,
@@ -872,7 +868,7 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
   },
   XRP: {
     min_withdraw_amount: 21,
-    withdrawal_fee: 0.15,
+    withdrawal_fee: 0.1,
   },
   XTZ: {
     min_withdraw_amount: 1,
