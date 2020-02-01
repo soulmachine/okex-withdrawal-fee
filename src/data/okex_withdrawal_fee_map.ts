@@ -53,10 +53,6 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     min_withdraw_amount: 1,
     withdrawal_fee: 2,
   },
-  ARK: {
-    min_withdraw_amount: 0.2,
-    withdrawal_fee: 0.1,
-  },
   AST: {
     min_withdraw_amount: 1,
     withdrawal_fee: 8,
@@ -111,7 +107,7 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
   },
   BTC: {
     min_withdraw_amount: 0.01,
-    withdrawal_fee: 0.0005,
+    withdrawal_fee: 0.0004,
   },
   BTG: {
     min_withdraw_amount: 0.001,
