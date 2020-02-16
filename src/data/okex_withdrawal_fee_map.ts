@@ -49,6 +49,10 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     min_withdraw_amount: 1,
     withdrawal_fee: 5,
   },
+  ANKR: {
+    min_withdraw_amount: 1,
+    withdrawal_fee: 100,
+  },
   ARDR: {
     min_withdraw_amount: 1,
     withdrawal_fee: 2,
@@ -269,6 +273,10 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     min_withdraw_amount: 0.1,
     withdrawal_fee: 0.001,
   },
+  ETEX: {
+    min_withdraw_amount: 1,
+    withdrawal_fee: 8,
+  },
   ETH: {
     min_withdraw_amount: 0.01,
     withdrawal_fee: 0.003,
@@ -354,8 +362,8 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     withdrawal_fee: 2,
   },
   ICX: {
-    min_withdraw_amount: 0.01,
-    withdrawal_fee: 2.5,
+    min_withdraw_amount: 1,
+    withdrawal_fee: 0.02,
   },
   INS: {
     min_withdraw_amount: 0.1,
@@ -388,6 +396,10 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
   KAN: {
     min_withdraw_amount: 1,
     withdrawal_fee: 100,
+  },
+  KARL: {
+    min_withdraw_amount: 0.01,
+    withdrawal_fee: 0,
   },
   KCASH: {
     min_withdraw_amount: 1,
@@ -693,6 +705,10 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     min_withdraw_amount: 10,
     withdrawal_fee: 150,
   },
+  SRCOIN: {
+    min_withdraw_amount: 100,
+    withdrawal_fee: 500,
+  },
   STC: {
     min_withdraw_amount: 1,
     withdrawal_fee: 20,
@@ -780,14 +796,14 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
       withdrawal_fee: 0.88,
     },
     {
-      min_withdraw_amount: 10,
-      subtype: 'OMNI',
-      withdrawal_fee: 2,
-    },
-    {
       min_withdraw_amount: 2,
       subtype: 'TRC20',
       withdrawal_fee: 0,
+    },
+    {
+      min_withdraw_amount: 2,
+      subtype: 'OMNI',
+      withdrawal_fee: 0.88,
     },
   ],
   UTK: {
@@ -849,6 +865,10 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
   XAS: {
     min_withdraw_amount: 1,
     withdrawal_fee: 5,
+  },
+  XEM: {
+    min_withdraw_amount: 1,
+    withdrawal_fee: 4,
   },
   XLM: {
     min_withdraw_amount: 21,
