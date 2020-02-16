@@ -801,9 +801,9 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
       withdrawal_fee: 0,
     },
     {
-      min_withdraw_amount: 2,
+      min_withdraw_amount: 10,
       subtype: 'OMNI',
-      withdrawal_fee: 0.88,
+      withdrawal_fee: 2,
     },
   ],
   UTK: {
