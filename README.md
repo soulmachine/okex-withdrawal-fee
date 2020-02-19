@@ -28,10 +28,13 @@ There is only one API in this library:
  * Get withdrawal fee of the symbol.
  *
  * @param symbol The symbol name
- * @param subtype The subtype, optional
+ * @param platform The platform, optional
  * @returns WithdrawalFee or undefined
  */
-export function getWithdrawalFee(symbol: string, subtype?: string): WithdrawalFee | undefined;
+export declare function getWithdrawalFee(
+  symbol: string,
+  platform?: string,
+): WithdrawalFee | undefined;
 ```
 
 Which returns a `WithdrawalFee`:
@@ -40,6 +43,6 @@ Which returns a `WithdrawalFee`:
 export interface WithdrawalFee {
   withdrawal_fee: number;
   min_withdraw_amount: number;
-  subtype?: 'ERC20' | 'TRC20' | 'OMNI' | 'AAC' | 'BEP2';
+  platform?: 'Ethereum' | 'TRON' | 'Omni';
 }
 ```

@@ -5,16 +5,16 @@ import { WithdrawalFee } from './pojo/withdrawal_fee';
  * Get withdrawal fee of the symbol.
  *
  * @param symbol The symbol name
- * @param subtype The subtype, optional
+ * @param platform The platform, optional
  * @returns WithdrawalFee or undefined
  */
 // eslint-disable-next-line import/prefer-default-export
-export function getWithdrawalFee(symbol: string, subtype?: string): WithdrawalFee | undefined {
+export function getWithdrawalFee(symbol: string, platform?: string): WithdrawalFee | undefined {
   if (!(symbol in WITHDRAWAL_FEE_MAP)) return undefined;
 
-  if (subtype) {
+  if (platform) {
     const arr = WITHDRAWAL_FEE_MAP[symbol] as WithdrawalFee[];
-    return arr.find(x => x.subtype === subtype);
+    return arr.find(x => x.platform === platform);
   }
   return WITHDRAWAL_FEE_MAP[symbol] as WithdrawalFee;
 }

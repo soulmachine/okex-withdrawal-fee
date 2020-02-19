@@ -792,17 +792,17 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
   USDT: [
     {
       min_withdraw_amount: 2,
-      subtype: 'ERC20',
+      platform: 'Ethereum',
       withdrawal_fee: 0.88,
     },
     {
       min_withdraw_amount: 2,
-      subtype: 'TRC20',
+      platform: 'TRON',
       withdrawal_fee: 0,
     },
     {
       min_withdraw_amount: 10,
-      subtype: 'OMNI',
+      platform: 'Omni',
       withdrawal_fee: 2,
     },
   ],
