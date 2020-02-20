@@ -653,6 +653,10 @@ const mapping: { [key: string]: WithdrawalFee | WithdrawalFee[] } = {
     min_withdraw_amount: 1,
     withdrawal_fee: 10,
   },
+  RVN: {
+    min_withdraw_amount: 1,
+    withdrawal_fee: 50,
+  },
   SALT: {
     min_withdraw_amount: 1,
     withdrawal_fee: 0.5,
